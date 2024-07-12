@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rea Nicole - Web Designer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: yellowgreen; /* Dark brown background */
+            color: #fff;
+        }
+
+        header {
+            background-color: #2D2D2D;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-link.active {
+            color: #f39c12; /* Yellow highlight for active link */
+        }
+
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #section2 {
+            background-color: #2D2D2D;
+            color: #fff;
+        }
+
+        #section2 h1, #section2 h2 {
+            margin: 10px 0;
+        }
+
+        #section2 h1 span, #section2 h2 span {
+            color: #f39c12;
+        }
+
+        #section2 .image-placeholder {
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+            margin: 20px auto;
+        }
+
+        #section3 {
+            background-color: #F4E7D4; /* Light beige background */
+            color: #333;
+        }
+
+        #section3 h2 {
+            margin-bottom: 20px;
+        }
+
+        #section3 .about-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #section3 img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #section3 p {
+            max-width: 600px;
+            margin: 0 20px;
+        }
+
+        #section3 button {
+            background-color: #f39c12;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #section3 button:hover {
+            background-color: #e67e22;
+        }
+
+        #section4 {
+            background-color: #fff;
+            color: yellowgreen;
+        }
+
+        #section4 h2 {
+            margin-bottom: 20px;
+        }
+
+        #section4 .projects-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #section4 .project {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            max-width: 300px;
+            text-align: left;
+        }
+
+        #contact {
+            background-color: #F4E7D4; /* Light beige background */
+            color: #333;
+        }
+
+        #contact h2 {
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact form label, #contact form input, #contact form textarea, #contact form button {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px 0;
+        }
+
+        #contact form input, #contact form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #contact form button {
+            background-color: #f39c12;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contact form button:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background-color: #2D2D2D;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            #section3 .about-content, #section4 .projects-content {
+                flex-direction: column;
+            }
+
+            #section3 img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section2" class="nav-link">Home</a></li>
+                <li><a href="#section3" class="nav-link">About Me</a></li>
+                <li><a href="#section4" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="section2">
+        <h1>Hi, I'm <span>Rea Nicole</span></h1>
+        <h2>I'm a <span>Web Designer</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
+        <div class="image-placeholder">[Image Placeholder]</div>
+    </section>
+
+    <section id="section3">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="path/to/your/image.jpg" alt="Rea Nicole">
+            <p>My name is Rea Nicole, a passionate Web Designer. I specialize in creating beautiful and functional websites. Let's create something amazing together!</p>
+            <button>Download CV</button>
+            <button>Hire Me</button>
+        </div>
+    </section>
+
+    <section id="section4">
+        <h2>Projects</h2>
+        <div class="projects-content">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Rea Nicole. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+
+                navLinks.forEach(link => {
+                    const section = document.querySelector(link.getAttribute('href'));
+                    const sectionTop = section.offsetTop;
+                    if (scrollY >= sectionTop - 60) {
+                        current = link.getAttribute('href');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
